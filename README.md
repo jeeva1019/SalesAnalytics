@@ -93,15 +93,8 @@ go mod tidy
 
 Ensure that your MariaDB/MySQL server is running and the database specified in `config.toml` exists.
 
-### 4. Create a `log` folder
 
-The application writes logs to the `log/` directory. Please create it before running the app:
-
-```bash
-mkdir log
-```
-
-### 5. Run the application
+### 4. Run the application
 
 ```bash
 go run cmd/main.go
