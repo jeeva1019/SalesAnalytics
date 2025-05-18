@@ -1,0 +1,409 @@
+{
+	"info": {
+		"_postman_id": "19970eda-ef6c-4a38-b077-327a3edc76ed",
+		"name": "SalesAnalytics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41482357"
+	},
+	"item": [
+		{
+			"name": "GetAllProductsRangeWise",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/top-products?start=2024-01-01&end=2025-01-31&limit=10",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"top-products"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "2024-01-01"
+						},
+						{
+							"key": "end",
+							"value": "2025-01-31"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetAllProductsRangeWise",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/top-products?start=2024-01-01&end=2025-01-31&limit=10",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"top-products"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "end",
+									"value": "2025-01-31"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, credentials"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 May 2025 08:39:55 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "515"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"OK\",\n    \"status\": \"S\",\n    \"result\": [\n        {\n            \"ProductID\": \"P789\",\n            \"ProductName\": \"Levi's 501 Jeans\",\n            \"Quantity\": 5\n        },\n        {\n            \"ProductID\": \"P456\",\n            \"ProductName\": \"iPhone 15 Pro\",\n            \"Quantity\": 4\n        },\n        {\n            \"ProductID\": \"P234\",\n            \"ProductName\": \"Sony WH-1000XM5 Headphones\",\n            \"Quantity\": 4\n        },\n        {\n            \"ProductID\": \"P123\",\n            \"ProductName\": \"UltraBoost Running Shoes\",\n            \"Quantity\": 3\n        },\n        {\n            \"ProductID\": \"P890\",\n            \"ProductName\": \"Adidas Hoodie\",\n            \"Quantity\": 3\n        },\n        {\n            \"ProductID\": \"P678\",\n            \"ProductName\": \"MacBook Pro 14\",\n            \"Quantity\": 2\n        },\n        {\n            \"ProductID\": \"P567\",\n            \"ProductName\": \"Nike Air Max 90\",\n            \"Quantity\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetProductsRegionWise",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/top-products/region?start=2024-01-01&end=2025-01-31&limit=5&region=Asia",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"top-products",
+						"region"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "2024-01-01"
+						},
+						{
+							"key": "end",
+							"value": "2025-01-31"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "region",
+							"value": "Asia"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetProductsRegionWise",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/top-products/region?start=2024-01-01&end=2025-01-31&limit=5&region=Asia",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"top-products",
+								"region"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "end",
+									"value": "2025-01-31"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "region",
+									"value": "Asia"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, credentials"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 May 2025 08:40:11 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "297"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"msg\":\"OK\",\"status\":\"S\",\"result\":[{\"ProductID\":\"P789\",\"ProductName\":\"Levi's 501 Jeans\",\"Quantity\":3},{\"ProductID\":\"P456\",\"ProductName\":\"iPhone 15 Pro\",\"Quantity\":2},{\"ProductID\":\"P890\",\"ProductName\":\"Adidas Hoodie\",\"Quantity\":2},{\"ProductID\":\"P678\",\"ProductName\":\"MacBook Pro 14\",\"Quantity\":1}]}\n"
+				}
+			]
+		},
+		{
+			"name": "GetProductsCategoryWise",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/top-products/category?start=2024-01-01&end=2025-01-31&limit=10&category=Electronics",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"top-products",
+						"category"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "2024-01-01"
+						},
+						{
+							"key": "end",
+							"value": "2025-01-31"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "category",
+							"value": "Electronics"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetProductsCategoryWise",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/api/top-products/category?start=2024-01-01&end=2025-01-31&limit=10&category=Electronics",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"top-products",
+								"category"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "end",
+									"value": "2025-01-31"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "category",
+									"value": "Electronics"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, credentials"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 May 2025 08:40:29 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "243"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"msg\":\"OK\",\"status\":\"S\",\"result\":[{\"ProductID\":\"P234\",\"ProductName\":\"Sony WH-1000XM5 Headphones\",\"Quantity\":4},{\"ProductID\":\"P456\",\"ProductName\":\"iPhone 15 Pro\",\"Quantity\":4},{\"ProductID\":\"P678\",\"ProductName\":\"MacBook Pro 14\",\"Quantity\":2}]}\n"
+				}
+			]
+		},
+		{
+			"name": "Refersh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/api/refresh-data",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"api",
+						"refresh-data"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/refresh-data",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"refresh-data"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, credentials"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 May 2025 09:10:55 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"msg\":\"Process successfully completed\",\"status\":\"S\"}\n"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": "http://localhost:29095/api",
+			"type": "string"
+		}
+	]
+}

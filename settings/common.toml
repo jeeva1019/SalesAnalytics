@@ -1,0 +1,9 @@
+# CSV Path config
+path = "./csv/sample.csv"
+
+# port number 
+port = "29095"
+
+# schedule time
+hours = "10"
+
