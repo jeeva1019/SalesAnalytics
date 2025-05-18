@@ -97,8 +97,6 @@ go mod tidy
 
 Make sure your MariaDB/MySQL server is running and the database specified in `dbname` exists.
 
-Run any necessary migrations (if you have migration scripts), or create tables as per the schema above.
-
 ### 4. Run the application
 
 ```bash
