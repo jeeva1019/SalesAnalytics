@@ -48,7 +48,6 @@ This project processes sales data from CSV files and loads it into a MariaDB/MyS
 | quantity\_sold                              | bigint          |                        |
 | unit\_price                                 | double          |                        |
 | discount                                    | double          |                        |
-| **Primary Key:** (`order_id`, `product_id`) |                 |                        |
 
 ---
 
