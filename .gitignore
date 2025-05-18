@@ -1,5 +1,6 @@
 # Ignore all .log files
 *.log
 
-# Don't ignore the log/ folder
+# Don't ignore the log folder itself
 !log/
+!log/.gitkeep
